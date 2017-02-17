@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background-color: blue;
+}
+
+.menu-button{
+	color:#fff;
+	width:160px;
+	height:30px;
+	margin:10px 0px 10px 10px;
+	float: left;
+	background-color: #f00;
+}
+
+.menu{
+	width:auto;
+	height:auto;
+	list-style: none;
+}
+
+.menu:after {
+	display: block;
+	clear: both;
+	content: "";
+}
