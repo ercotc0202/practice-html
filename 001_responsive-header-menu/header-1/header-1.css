@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*header-1----------------*/
+
+.logo{
+    color:#fff;
+	width:150px;
+	height:150px;
+	margin:40px;
+	float: left;
+	background-color: #dfdfdf;
+}
+
+.logo:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.menu{
+	margin:40px;
+	width: 450px;
+	float: right;
+}
+
+.menu-1{
+	list-style: none;
+}
+
+.menu-1>li{
+	float: left;
+	color: #959595;
+	font-size: 8pt;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	letter-spacing: 2px;
+	margin:0px 0 0px 20px ;
+	width: 130px;
+	height: 20px;
+	text-align: center;
+}
+
+.menu-1:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.menu-2{
+	list-style: none;
+}
+
+
+.menu-2>li{
+	float: left;
+	font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+	letter-spacing: 4px;
+	margin:10px 0 0 20px ;
+	width: 130px;
+	height: 20px;
+	text-align: center;
+}
+
+.menu-2:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.menu-tab{
+	display: none;
+}
+
+
+/*under1000px-----------------------*/
+
+@media screen and (max-width:1000px) { 
+
+	.menu{
+		display: none;
+	}
+
+	.menu-2{
+		display: none;
+	}
+
+	.menu-clear-float{
+		display: none;
+	}
+
+
+    .menu-sp{
+	 margin:40px;
+	 width: 75px;
+	 height: 20px;
+	 float: right;
+    }
+
+    .menu-tab{
+    display: block;
+    float: left;
+	font-size: 11px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	letter-spacing: 2px;
+	margin:0 3px 0 0 ;
+	width: 40px;
+	height: 20px;
+    }
+
+   .hamb{
+   	float: right;
+   	width: 20px;
+   	height:20px;
+   }
+
+
+   .hamb>li{
+   	 height: 2px;
+	 width: 15px;
+	 margin-top: 3px; 
+	 list-style: none;
+	 background-color: black;
+    }
+
+    .menu-sp:after{
+	display: block;
+	clear: both;
+	content: "";
+    }
+
+}
+
+
+/*smartphone-under600px-----------------------*/
+
+@media screen and (max-width:600px) { 
+
+	.menu{
+		display: none;
+	}
+
+	.menu-2{
+		display: none;
+	}
+
+	.menu-clear-float{
+		display: none;
+	}
+
+	.menu-tab{
+		display: none;
+    }
+
+	.logo{
+       color:#fff;
+	   width:30px;
+	   height:30px;
+	   margin:40px;
+	   float: left;
+	   background-color: #dfdfdf;
+	}
+
+	.logo:after{
+	   display: block;
+	   clear: both;
+	   content: "";
+    }
+
+
+    .menu-sp{
+	 margin:40px;
+	 width: 16px;
+	 height: 16px;
+	 float: right;
+    }
+
+   .hamb>li{
+   	 height: 2px;
+	 width: 16px;
+	 margin-bottom: 4px;
+	 list-style: none;
+	 background-color: black;
+    }
+
+}
+
+
+
+

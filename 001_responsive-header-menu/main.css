@@ -3,9 +3,39 @@
 	padding: 0;
 }
 
-.header{
-	background-color: blue;
+
+/*@media screen and (max-width:525px) { 
+	.menu{
+		display: none;
+
+		//opacity: 0.0;
+		//display: none;	要素ごそっとなくなる
+		//visibility: hidden;　隠す
+	}
 }
+
+@media screen and (min-width:526px) { 
+	.menu-sp{
+		display: none;
+     }
+}
+*/
+
+.header{
+	height: 50px;
+    background-color: blue;
+
+}
+
+
+.menu-line{
+	width:30px;
+	height:2px;
+	margin-bottom: 10px;
+	background-color: black;
+	list-style: none;
+}
+
 
 .menu-button{
 	color:#fff;
@@ -16,10 +46,16 @@
 	background-color: #f00;
 }
 
+
+
 .menu{
-	width:auto;
-	height:auto;
 	list-style: none;
+}
+
+@media screen and (max-width:525px) { 
+	.menu{
+		display: none;
+	}
 }
 
 .menu:after {
@@ -27,3 +63,18 @@
 	clear: both;
 	content: "";
 }
+
+
+
+.menu-sp{
+	display: none;
+	padding: 10px;
+}
+
+@media screen and (max-width:525px) { 
+	.menu-sp{
+		display: block;
+	}
+}
+
+
