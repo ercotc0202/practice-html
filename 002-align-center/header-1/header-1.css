@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+
+/*header-1----------------*/
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	background-image: url("sample.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.logo{
+	position: absolute;
+	top: 40px;
+	left: 40px;
+
+	width:150px;
+	height:150px;
+	background-color: #dfdfdf;
+}
+
+
+.menu{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+.menu-1:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.menu-name{
+	list-style: none;
+	float: left;
+	margin-left: 60px;
+}
+
+.menu-name-1{
+	color: #959595;
+	font-size: 8pt;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 200;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+
+.menu-name-2{
+	font-size: 14px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: 4px;
+    margin-top: 10px;
+	text-align: center;
+}
+
+
+.menu-tab{
+	display: none;
+}
+
+
+/*under1000px-----------------------*/
+
+@media screen and (max-width:1000px) { 
+
+	.menu, .menu-2, .menu-clear-float{
+		display: none;
+	}
+
+	.menu-sp{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		width: 75px;
+		height: 20px;
+	}
+
+	.menu-tab{
+		display: block;
+		float: left;
+		font-size: 11px;
+		font-family: 'Nunito Sans', sans-serif;
+		font-weight: 200;
+		letter-spacing: 2px;
+		margin:0 3px 0 0 ;
+	}
+
+	.hamb{
+		float: right;
+		width: 20px;
+		height:20px;
+	}
+
+
+	.hamb>li{
+		height: 2px;
+		width: 15px;
+		margin-top: 3px; 
+		list-style: none;
+		background-color: black;
+	}
+
+	.menu-sp:after{
+		display: block;
+		clear: both;
+		content: "";
+	}
+
+}
+
+
+/*smartphone-under600px-----------------------*/
+
+@media screen and (max-width:600px) { 
+
+	.menu,.menu-2,.menu-clear-float,.menu-tab{
+		display: none;
+	}
+
+	.logo{
+		position: absolute;
+		top: 40px;
+		left: 40px;
+
+		width:30px;
+		height:30px;
+		background-color: #dfdfdf;
+	}
+
+	.menu-sp{
+		position: absolute;
+		top: 40px;
+		right:40px;
+
+		width: 16px;
+		height: 16px;
+	}
+
+	.hamb>li{
+		height: 2px;
+		width: 16px;
+		margin-bottom: 4px;
+		list-style: none;
+		background-color: black;
+	}
+
+}
+
+
+
+
