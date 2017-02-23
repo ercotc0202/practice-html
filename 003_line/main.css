@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.lineContainer{
+	margin: 20px;
+}
+
+.line{
+	width: 200px;
+	height: 200px;
+	/*
+	border-width: 1px;
+	border-style: solid;
+	border-color: red;
+	*/
+
+	/*border: 2px solid blue;*/
+
+	border-top: 20px solid blue;
+	border-left: 100px solid green;
+	border-bottom:  10px solid green;
+	border-right:  1px dashed green;
+
+
+}
+
+.line2{
+	background-color: red;
+	width: 500px;
+	height: 1px;
+	margin: 50px 0 ;
+}
+
+hr{
+	border-color: green;
+	border-width: 1px;
+	border-bottom: 0px;
+	margin: 0 30px;
+}
+
+.text{
+	font-family: serif;
+	width: 300px;
+	font-size: 16px;
+	line-height: 36px;
+	letter-spacing: 2.1px;
+}
+
+.icon{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	margin: 20px;
+
+	/*角丸*/
+	border-radius: 150px;
+	overflow: hidden;
+}
+
+
+.icon2{
+	width: 300px;
+	height: 300px;
+	background-color: lightgray;
+	margin: 20px;
+
+	/*角丸*/
+	/*border-radius: 150px;*/
+
+	overflow: hidden;
+	/*overflow: scroll;*/
+
+	    /*white-space: nowrap;*/
+}
+
