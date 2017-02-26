@@ -8,6 +8,7 @@ html, body{
 	background-color:#1c1c1c; 
 }
 
+
 /*-------------------------------*/
 
 
@@ -80,14 +81,15 @@ html, body{
 /*-------------------------------*/
 
 .contents-2{
-
 	margin: 60px 0 ;
-
+	/*!!!!!!重要!!!!!*/
+	font-size: 0px;
 }
 
-.left-2{
-	width: 375px;
-	float: left;
+.contents-2-block{
+	width: 50%;
+    display: inline-block;	
+
 }
 
 .left-2:after{
@@ -122,48 +124,38 @@ html, body{
 	line-height: 17px;
 }
 
-
-.right-2{
-	width: 375px;
-	float: right;
-
-}
-
 .right-2:after{
 	display: block;
 	clear: both;
 	content: "";
 }
 
-.contents-2:after{
-	display: block;
-	clear: both;
-	content: "";
-}
-
-
 /*-------------------------------*/
 
 .contents-3{
-	width: auto;
 	margin: 60px 0 ;
+	height: 100px;
+	background-color: pink;
+    font-size: 0px;
+
 }
 
-.left-3{
-	width: 375px;
-	float: left;
+.contents-3-block{
+	width: 50%;
+    display: inline-block;	
+    background-color: green;
 }
 
-.left-3:after{
+.contents-3-block:after{
 	display: block;
 	clear: both;
 	content: "";
 }
 
 
-.view{
+.block-1{
 	position: relative;
-	width: 147px;
+	width: 171px;
 	height:158px;
 	float: left;
 }
@@ -171,7 +163,7 @@ html, body{
 .sercle{
 	position: absolute;
 	bottom: 0px;
-	right: 0px;
+	left: 25px;
 
 	width: 125px;
 	height: 125px;
@@ -181,27 +173,51 @@ html, body{
 .text-mini{
 	position: absolute;
 	bottom:10px;
-	right: 20px;
+	right: 40px;
+
 	font-size: 10px;
 	line-height: 11px;
 
 }
 
-.view-photo{
-	max-width: 125px;
-	height: 125px;
-	overflow: hidden;
-}
-
-
 .middle{
+    position: absolute;
     margin-top:60px;
+    right: 0px;
 	height: 1px;
 
 	width: 20px;
-	float: left;
 	background-color: #303030;
 }
+
+.view-photo{
+	position: absolute;
+	top:0px;
+	left: 0px;
+
+	width: 125px;
+	height: 125px;
+	overflow: hidden;
+	background-color: red;
+}
+
+.view-photo.horizontal>img{
+	height: 125px;
+}
+
+.view-photo.vartical>img{
+	width: 125px;
+	margin-top: -20px;
+}
+
+.photo-right{
+	width:125px;
+	margin-top: -30px;
+	background-color: yellow;
+}
+
+
+
 
 .view-info{
 	margin-left: 10px;
@@ -230,21 +246,22 @@ html, body{
 }
 
 .right-3{
-	width: 375px;
-	float: right;
+	width: 50%;
+    display:  inline-block;	
+    background-color: green;
 }
 
-.right-3:after{
+/*.right-3:after{
 	display: block;
 	clear: both;
 	content: "";
-}
+}*/
 
-.contents-3:after{
+/*.contents-3:after{
 	display: block;
 	clear: both;
 	content: "";
-}
+}*/
 
 /*-------------------------------*/
 
