@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body, .wrapper{
+	height:100%;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.main {
+	float: left;
+	width: 100%;
+	margin-right: -300px;
+	padding-right: 300px;
+	box-sizing: border-box;
+
+	height: 100%;
+	background-color: green;
+}
+
+.side {
+	float: right;
+	width: 300px;
+	background-color: red;
+	height: 100%;
+}

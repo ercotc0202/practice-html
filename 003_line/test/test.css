@@ -134,8 +134,7 @@ html, body{
 
 .contents-3{
 	margin: 60px 0 ;
-	height: 100px;
-	background-color: pink;
+	height: 180px;
     font-size: 0px;
 
 }
@@ -143,7 +142,6 @@ html, body{
 .contents-3-block{
 	width: 50%;
     display: inline-block;	
-    background-color: green;
 }
 
 .contents-3-block:after{
@@ -248,7 +246,6 @@ html, body{
 .right-3{
 	width: 50%;
     display:  inline-block;	
-    background-color: green;
 }
 
 /*.right-3:after{
