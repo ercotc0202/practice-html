@@ -1,0 +1,602 @@
+/*===================================*/
+/*common*/
+/*===================================*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body,.main {
+	font-size: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.font-title{
+	font-family: 'Vesper+Libre', serif;
+	font-weight: 900;
+	letter-spacing: 9px;
+}
+
+.font-text{
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/*title===============*/
+
+
+.title{
+	margin-left: 20px; 
+	font-size: 22px;
+	letter-spacing: 20px;
+	display: inline-block;
+}
+
+.title__contents{
+	padding: 70px 0 50px 0 ;
+}
+
+.line{
+	margin: 0 20px;
+	margin-bottom: 8px;
+	display: inline-block;
+	width: 70px;
+	height: 1px;
+	background-color: #2B2B2B;
+}
+
+/*===============*/
+
+/*bg===============*/
+
+.bg_fixed2 {
+	height: 600px;
+	background-image: url('imgs/bg/bg-02.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+/*	z-index: 1;
+*/}
+
+.bg_fixed3 {
+	height: 600px;
+	background-image: url('imgs/bg/bg-03.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+/*	z-index: 1;
+*/}
+
+/*bg===============*/
+
+
+/*===================================*/
+/*===================================*/
+
+
+
+
+
+
+/*===================================*/
+/*main*/
+/*===================================*/
+
+.main{
+	text-align: center;
+	background-image: url(imgs/bg/bg-top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	margin-bottom: -50px;
+
+}
+
+.main__contents{
+	display: inline-block;
+	padding-top: 50px;
+}
+
+.logo{
+	margin: auto;
+}
+
+.menu{
+	margin-top: 30px;
+}
+
+
+.menu__contents{
+	
+	line-height: 28px;
+	font-size: 14px;
+	padding: 0 10px 0 20px;
+	cursor: pointer;
+	display: inline-block;
+	list-style: none;
+}
+
+.menu__contents:hover{
+	background-color: #2b2b2b;
+	color: white; 
+}
+
+.menu__line{
+	display: inline-block;
+	margin-bottom: 5px;
+	width: 40px;
+	height: 1px;
+	background-color: #2B2B2B;
+	padding-bottom: -5px;
+}
+
+
+/*===================================*/
+/*===================================*/
+
+
+
+/*===================================*/
+/*profile*/
+/*===================================*/
+
+.profile{
+	background-color: #f9f9f5;
+}
+
+.profile__photo{
+	float: left;
+	width: 60%;
+	min-height: 430px;
+
+	background-image: url(imgs/profile/profile.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.photo__img{
+	width: 100%;
+	
+}
+
+.profile__contents{
+	float: right;
+	width: 40%;
+
+}
+
+.profile:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.profile__textbox{
+	padding-top:50px;
+	margin-left: -95px;
+}
+
+.profile__title>p{
+	font-size: 22px;
+	letter-spacing: 20px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+
+.profile__title:after{
+	margin-bottom: 8px;
+	display: inline-block;
+	width: 70px;
+	height: 1px;
+	background-color: #2B2B2B;
+	content: "";
+}
+
+.profile__detail{
+	position: relative;
+
+	width: 100%;
+	box-sizing:border-box;
+}
+
+/*text-box=======================*/
+
+.box_line_1{
+	width: 90%;
+	border: 1px solid #2B2B2B;
+	box-sizing:border-box;
+	margin-bottom: 40px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.box_line_2{
+	height: 100%;
+	width: 90%;
+	border: 1px solid #2B2B2B;
+	box-sizing:border-box;
+
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+
+.box__text{
+	margin: 40px;
+}
+
+.box__text>h2{
+	font-size: 30px;
+	font-family: serif;
+}
+
+.box__text>p{
+	font-size: 11px;
+	letter-spacing: 2px;
+	line-height: 20px;
+
+
+}
+
+.box__text__2{
+	margin-bottom: 20px;
+
+}
+
+/*=======================*/
+
+/*===================================*/
+/*===================================*/
+
+
+
+
+
+/*===================================*/
+/*gallery*/
+/*===================================*/
+
+.gallery{
+	padding-bottom: 50px; 
+	text-align: center;
+	background-color: #f9f9f5;
+
+}
+
+.title>p{
+	display: inline-block;
+}
+
+.gallery__contents{
+	margin-left: 50px ;
+}
+
+.gallery__list>li{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.gallery__box{
+	width: 173px;
+	height: 173px;
+	margin: 0 50px 50px 0; 
+
+	/*	display: table;*/
+
+	border: 1px solid #2B2B2B;
+	box-sizing:border-box;
+
+	position: relative;
+	cursor: pointer;
+}
+
+.gallery__box__line{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+
+	border: 1px solid #2B2B2B;
+
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.gallery__new{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.gallery__img{
+	width: 128px;
+	height: 128px;
+	background-color: yellow;
+	overflow: hidden;
+	border-radius: 2px;
+/*
+	display: table-cell;
+	vertical-align: middle;*/
+
+	/*中央寄せ*/
+	top: 23px;
+	left: 23px;
+	position: absolute;
+}
+
+.gallery__img>img{
+	width: 100%;
+}
+
+.gallery__button{
+	width: 240px;
+	height: 43px;
+
+	margin: 0 auto;
+
+	border-top: 1px solid #2B2B2B;
+	border-left: 1px solid #2B2B2B;
+	border-bottom:  3px solid #2B2B2B;
+	border-right:  1px solid #2B2B2B;
+
+}
+
+.gallery__button>p{
+	font-size: 13px;
+	line-height: 47px;
+	letter-spacing: 5px;
+	padding-left: 5px;
+}
+
+.gallery__text{
+	display: none;
+
+	width: 100%;
+	height: 100%;
+	color: white;
+
+	position: absolute;
+	
+}
+
+.gallery__text>p{
+	font-size: 14px;
+	letter-spacing: 12px;
+	margin-left: 12px;
+	padding-left: 20px;
+
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+
+
+/*hover==================*/
+
+
+.gallery__button:hover{
+	background-color: #222222;
+
+}
+
+.gallery__button>p:hover{
+	color: white;
+
+}
+
+.gallery__box:hover>.gallery__box__line{
+	background-color: rgba(0, 0, 0, 0.60);
+}
+
+.gallery__box:hover>.gallery__text{
+	display: table;	
+	color: white;	
+
+
+
+}
+
+
+
+/*===================================*/
+/*===================================*/
+
+.contact{
+	background-color: #f9f9f5;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+
+.contact__text{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+
+}
+
+.contact__list>li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.button__mail{
+	width: 92px;
+	height: 92px;
+	background-image: url("imgs/contact/mail.png");
+}
+
+.button__twitter{
+	width: 92px;
+	height: 92px;
+	background-image: url("imgs/contact/twitter.png");
+}
+
+.button__insta{
+	width: 92px;
+	height: 92px;
+	background-image: url("imgs/contact/insta.png");
+}
+
+.button__mail:hover{
+	background-image: url("imgs/contact/mail_on.png");
+}
+
+.button__twitter:hover{
+	background-image: url("imgs/contact/twitter_on.png");
+}
+
+.button__insta:hover{
+	background-image: url("imgs/contact/insta_on.png");
+}
+
+/*===================================*/
+/*===================================*/
+
+.room{
+	height: 200px;
+}
+
+.footer{
+	height: 50px;
+	background-color: black;
+	text-align: center;
+
+}
+
+.footer__text{
+	height: 50px;
+	margin: 0 auto;	
+
+}
+
+.footer__text>p{
+	font-size:10px; 
+	line-height: 50px;
+	color: white;
+}
+
+
+/*smartphone-under600px-----------------------*/
+
+
+.profile__title__contents{
+	display: none;
+}
+
+
+/*smartphone-under600px-----------------------*/
+
+@media screen and (max-width:720px) { 
+
+	.menu,.profile__title{
+		display: none;
+	}
+
+	.menu__sp{
+		width: 34px;
+
+		position: absolute;
+		top: 50px;
+		left: 30px;
+	}
+
+	.menu__sp>ul>li{
+		height: 2px;
+		background-color: #2B2B2B;
+		margin-bottom: 10px; 
+	}
+
+	.profile__photo{
+		min-height: 300px;
+		width: 100%;
+	}
+
+	.photo__img{
+		width: 100%;
+
+	}
+
+	.profile__contents{
+		width: 100%;
+
+		/*position: absolute;
+		top: -50px;*/
+	}
+
+	.profile__title__contents{
+		width: 100%;
+		margin: 0 auto 30px auto; 
+		font-size: 22px;
+		letter-spacing: 20px;
+		display: inline-block;
+		text-align: center;
+
+
+	}
+
+	.line{
+		margin: 0 0;
+		margin-bottom: 8px;
+		display: inline-block;
+		width: 70px;
+		height: 1px;
+		background-color: #2B2B2B;
+	}
+
+
+	.profile__textbox{
+		margin: 0 20px ;
+	}
+
+	.box_line_1{
+		width: 100%
+	}
+
+	.box_line_2{
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,278 @@
+/*===================================*/
+/*common*/
+/*===================================*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body,.main {
+	font-size: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.font-title{
+	font-family: 'Amatic SC', serif;
+	font-weight: 700;
+}
+
+.font-text{
+	font-family: 'Roboto', sans-serif;
+}
+
+.title{
+	padding: 70px 0 0 0;
+	margin: 0 auto; 
+	text-align: center;
+	font-size: 40px;
+}
+
+
+
+.bg_fixed2 {
+	height: 600px;
+	background-image: url('imgs/bg/painting-on-the-ground-891769_1920.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+/*	z-index: 1;
+*/}
+
+.bg_fixed3 {
+	height: 600px;
+	background-image: url('imgs/bg/photo202.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+/*	z-index: 1;
+*/}
+
+/*===================================*/
+/*===================================*/
+
+
+
+/*===================================*/
+/*main*/
+/*===================================*/
+
+.main{
+	text-align: center;
+	background-image: url(imgs/bg/388795_photo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+
+}
+
+.main__contents{
+	display: inline-block;
+	padding-top: 100px;
+}
+
+.logo{
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	margin: auto;
+}
+
+.menu{
+	margin-top: 30px;
+}
+
+.menu__list>li{
+	width: 160px;
+	line-height: 34px;
+	font-size: 26px;
+	list-style: none;
+	display: inline-block;
+	margin: 0 30px; 
+	cursor: pointer;
+}
+
+/*===================================*/
+/*===================================*/
+
+
+
+
+/*===================================*/
+/*gallery*/
+/*===================================*/
+
+.gallery{
+	padding-bottom: 50px; 
+	text-align: center;
+	background-color: #f9f9f5;
+
+}
+
+
+.gallery__contents{
+	margin: 50px 5% 0 0 ;
+/*	background-color: #f9f9f9;
+*/
+}
+
+.gallery__list>li{
+	width: 160px;
+	height: 160px;
+	background-color: yellow;
+	display: inline-block;
+	margin: 0 0 5% 5%;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.gallery__list>li>img{
+	width: 130%;
+	margin: -25px ;
+
+}
+
+
+/*===================================*/
+/*===================================*/
+
+
+
+/*===================================*/
+/*profile*/
+/*===================================*/
+
+.profile{
+	background-color: #f9f9f5;
+	padding-bottom: 80px;
+}
+
+
+.profile__contents{
+	margin: 0 5%;
+}
+
+.profile__contents:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.profile__photo{
+	float: left;
+	width: 40%;
+	display: inline-block;
+	margin-top: 30px;
+
+}
+
+.profile__photo>img{
+	width: 100%;
+}
+
+.profile__textbox{
+	float: right;
+	width: 60%;
+	display: inline-block;
+
+}
+
+.profile__textbox>h5{
+	font-size: 50px;
+	margin: 20px 0px 0 30px ;
+
+
+}
+
+.profile__textbox>p{
+	margin: 20px 0px 0 30px ;
+	font-size: 14px;
+}
+
+/*===================================*/
+/*===================================*/
+
+.contact{
+	background-color: #f9f9f5;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+
+.contact__textbox{
+	margin-top: 40px;
+}
+
+.contact__list>li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+
+/*===================================*/
+/*===================================*/
+
+.room{
+	height: 200px;
+}
+
+.footer{
+	height: 50px;
+	background-color: black;
+	text-align: center;
+
+}
+
+.footer__text{
+	height: 50px;
+	margin: 0 auto;	
+
+}
+
+.footer__text>p{
+	font-size:10px; 
+	line-height: 50px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
