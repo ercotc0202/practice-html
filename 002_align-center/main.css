@@ -45,6 +45,8 @@ html, body{
 }
 
 .menu2:after {
+	background-image: inherit;
+
 	display: block;
 	clear: both;
 	content: "";

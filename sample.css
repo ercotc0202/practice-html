@@ -1,0 +1,15 @@
+
+/*ボックスの線を内側に*/
+box-sizing:border-box;
+
+
+/*アフター要素*/
+.sumnail:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+
+/*ボタンポインター*/
+cursor: pointer;
