@@ -5,13 +5,31 @@
 
 html,body {
 	font-size: 0px;
-	height: 100%;
 	width: 100%;
+	height: 100%;
+
 }
 
 p{
 	line-height: 1em;
 }
+
+.font-200{
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 200;
+	color: #2b2b2b;
+}
+
+.font-700{
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	color: #4a226a;
+}
+
+
+/*===================================*/
+/*main*/
+/*===================================*/
 
 
 .main{
@@ -20,94 +38,101 @@ p{
 
 	position: relative;	
 
+	background-blend-mode: screen ;
 	background-image: url(imgs/top_bg.jpg);
+	background-color: #4a266a;
+
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-/*.main:before{
-	background-image: inherit;
-
-	filter: blur(5px);
-	content: ""
-	}*/
-
-	.button__home{
-		width: 100px;
-		height: 50px;
-
-		color: white;
-		font-size: 16px;
-		letter-spacing: 4px;
-
-		position: absolute;
-		top: 40px;
-		left: 40px;
-	}
-
-	.main__contents{
-		width: 500px;
-		height: 100px;
-		text-align: center;
-		color: white;
-
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		bottom: 0px;
-		left: 0px;
-		margin: auto;
-	}
-
-	.main__contents>h1{
-		font-size: 50px;
-		letter-spacing: 4px;
-	}
-
-	.main__contents>p{
-		font-size: 20px;
-		letter-spacing: 8px;
-	}
 
 
-	.main__photo{
-		width: 200px;
-		height: 200px;
-		background-color: pink;
+.button__home{
+	width: 100px;
+	height: 50px;
 
-		border-radius: 100px;
-		overflow: hidden;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 4px;
 
-		margin: 0 auto;
-/*	position: absolute;
-bottom: -100px;*/
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.main__contents{
+	width: 500px;
+	height: 100px;
+	text-align: center;
+	color: white;
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+}
+
+.main__contents>h1{
+	font-size: 60px;
+	letter-spacing: 4px;
+	color: white;
+}
+
+.main__contents>p{
+	font-size: 20px;
+	letter-spacing: 8px;
+	color: white;
+
 }
 
 
+.main__photo{
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+
+	border-radius: 100px;
+	overflow: hidden;
+
+	margin: 0 auto;
+}
+
+
+/*===================================*/
+/*===================================*/
 
 
 
 
 
 
+
+/*===================================*/
+/*about*/
+/*===================================*/
 
 
 .about{
 	width: 100%;
-	height: 400px;
-	background-color: #edeff5;
+	background-color: #f0e3f3;
 }
 
-.about__contents{
-	margin:0 80px;
-	padding-top: 50px;
+.wrap{
+	width: 945px;
+	margin:0 auto;
+
+	padding-top: 80px;
 	position: relative;
+
 }
 
 .about__title{
-	margin-bottom:30px;
+	margin: 80px 0 30px 0;
 	width: 100%;
 	position: relative;
 }
@@ -124,9 +149,9 @@ bottom: -100px;*/
 
 
 .title__line{
-	height: 7px;
+	height: 6px;
 	width: 50px;
-	background-color: salmon;
+	background-color: #4a266a;
 	margin-bottom: 20px;
 }
 
@@ -142,23 +167,36 @@ bottom: -100px;*/
 	right: 0px;
 	top: 0px;
 
-	border: 1px solid #2B2B2B;
+	border: 1px solid #4a266a;
 	box-sizing:border-box;
-	
+
+	color: #4a266a;	
+
+	cursor: pointer;
+}
+
+.button__resume:hover{
+	background-color: #4a266a;
+	color: white;
 }
 
 
 /*create-arrow*/
 
+.about__room{
+	height: 20px;
+}
 
 .about__arrow__box__1{
 	position: absolute;
 	left: -20px;
+	cursor: pointer;
 }
 
 .about__arrow__box__2{
 	position: absolute;
 	right: -20px;
+	cursor: pointer;
 }
 
 .about__arrow{
@@ -210,55 +248,521 @@ bottom: -100px;*/
 
 .about__box{
 	width: 100%;
-	height: 40px;
-	background-color: yellow;
 }
 
 
-.about__text{
-	width: 33.333%;
-	height: 40px;
-	background-color: pink;
-
+.about__text>li{
+	width: 31.333%;
+	margin-bottom: 50px;
 	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+
+}
+
+.about__text>li>h2{
+	font-size: 20px;
+}
+
+.about__text>li>h3{
+	font-size: 20px;
+	color: #de95ba;
+}
+
+.about__text>li>p{
+	font-size: 14px;
+	margin-top: 20px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+
+.about__text>li:nth-child(even){
+	margin: 0 3%;
 }
 
 
+.about__pagenation{
+	padding: 0 0 30px 0 ;
+	text-align: center;
+}
+
+
+.about__pagenation>ul>li{
+	height: 12px;
+	width: 12px;
+	list-style: none;
+	display: inline-block;
+
+	border-radius: 6px;
+	border: 2px solid #4a226a;
+	box-sizing:border-box;
+}
+
+.about__pagenation>ul>li:nth-child(even){
+	margin: 0 20px;
+}
+
+
+/*===================================*/
+/*===================================*/
 
 
 
-
-
+/*===================================*/
+/*skills*/
+/*===================================*/
 
 
 .skills{
 	width: 100%;
-	height: 400px;
 
+	background-blend-mode: screen ;	
 	background-image: url(imgs/skills_bg.jpg);
+	background-color: #4a266a;
+
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-background-position: top center;
+	background-position: top center;
 
 }
+
+
+.skills__title{
+	margin-bottom:30px;
+	width: 100%;
+}
+
+.skills__title__white{
+	color: white;
+}
+
+.title__line__white{
+	height: 5px;
+	width: 50px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+
+.skills__box{
+	padding-bottom: 120px;
+}
+
+.skills__box__box{
+	width: 315px;
+	height: 315px;
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.skills__box>li{
+	background-color: #f0e3f3;
+	display: inline-block;
+}
+
+
+.skills__box>li:nth-child(even){
+	background-color: #e0bfd0;
+}
+
+.skills__box__text{
+
+	display: table;	
+	margin: 0 auto;
+
+}
+
+.skills__box__text>h2{
+	font-size: 22px;
+	text-align: center;
+	color: #4a226a;	
+}
+
+.skills__box__text>h3{
+	font-size: 22px;
+	text-align: center;
+	color: #7f4a88;	
+}
+
+.skills__box__text>h1{
+	font-size: 32px;
+	color: #d02f8d;
+	text-align: center;
+}
+
+.skills__box__text>h4{
+	font-size: 32px;
+	color: #671aa9;
+	text-align: center;
+}
+
+
+/*===================================*/
+/*===================================*/
+
+
+/*===================================*/
+/*contact*/
+/*===================================*/
+
 
 .contact{
 	width: 100%;
-	height: 400px;
-	background-color: green;
 }
+
+.contact__bg{
+	width: 50%;
+	background-color: #4a266a;
+	padding:50px 0; 
+	min-height:380px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.id{
+	width: 100%;
+    max-width: 472.5px;
+    float: right;
+}
+
+.contact__bg:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+
+.contactme__bg{
+	width: 50%;
+	padding:50px 0; 
+	min-height:380px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: blue;
+}
+
+.contactme__bg:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.contactme{
+	width: 100%;
+    max-width: 472.5px;
+    float: left;
+    margin-left: 30px;
+
+}
+
+
+.contact__title{
+	color: white;
+	width: 100%;	
+}
+
+.contactme__title{
+	color: white;
+	width: 100%;
+}
+
+
+.title__id{
+	color: white;
+}
+
+
+
+.id__detail{
+	width: 100%;
+	height: 100%;
+
+}
+
+.id__detail__title{
+	width: 100px;
+
+	display: inline-block;
+	vertical-align: top;
+}
+
+.id__detail__title>p{
+	font-size: 18px;
+	line-height: 36px;
+	color: white;
+}
+
+.id__detail__text{
+	width: 200px;
+	display: inline-block;
+}
+
+.id__detail__text>p{
+	font-size: 16px;
+	line-height: 36px;
+	color: white;
+}
+
+
+
+
+.contactme__detail{
+	width: 100%;
+}
+
+.contactme__box1{
+	width: 47%;
+	margin-right: 6%;
+	margin-bottom: 10px;
+	display: inline-block;
+	border-bottom: 1px solid white;
+
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+
+}
+
+.contactme__box2{
+	width: 47%;
+	height: 40px;
+	margin-bottom: 10px;
+	display: inline-block;
+
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+
+	border-bottom: 1px solid white;
+
+}
+
+.contactme__box3{
+	height: 40px;
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+
+	border-bottom: 1px solid white;
+
+
+}
+
+.contactme__box4{
+	height: 100px;
+	margin-bottom: 10px;
+
+
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+
+	border-bottom: 1px solid white;
+
+}
+
+.contactme__btn{
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+
+	color: white;
+}
+
+/*===================================*/
+/*===================================*/
+
+
+
+/*===================================*/
+/*footer*/
+/*===================================*/
 
 .footer{
 	width: 100%;
-	height: 200px;
-	background-color: pink; 
+}
+
+.footer__box{
+	width: 945px;
+	margin:30px auto;
+	height: 20px;
+
+	position: relative;
 }
 
 
+.footer__box>p{
+	font-size: 13px;
+	display: inline-block;
+	line-height: 30px; 
+}
+
+.sns{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+}
+
+.sns>li{
+	height: 30px;
+	width: 30px;
+	margin-left: 20px;
+	background-color: salmon;
+
+	display: inline-block;
+
+}
+
+/*===================================*/
+/*===================================*/
 
 
 
 
+/*===================================*/
+/*smartphone*/
+/*===================================*/
+
+@media screen and (max-width:700px) { 
+
+	.button__home,.about__room,.contact:before,.button__resume{
+		display: none;
+	}
+
+	.sp__menu>ul{
+		width: 50px;
+		height: 60px;
+
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+
+	.sp__menu>ul>li{
+		width: 100%;
+		height: 6px;
+		background-color: white;
+		margin-bottom: 14px;
+	}
+
+	.main__contents{
+		width: 100%;
+	}
+
+	.about{
+		width: 100%;
+	}
+
+	.wrap{
+		width: auto;
+		margin: 0 30px;
+	}
 
 
+
+	.about__text>li{
+		width: 100%;
+	}
+
+	.about__text>li:nth-child(even){
+		margin: 0 0;
+		width: auto;
+		margin-bottom: 50px;
+	}
+
+	.about__text>li>h2{
+		font-size: 25px;
+	}
+
+	.about__text>li>p{
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.skills__box{
+		text-align: cen
+	}
+
+	.skills__box__box{
+		width: 500px;
+		height: 500px;
+		
+	}
+
+	.skills__box__text>h2 {
+		font-size: 30px;
+	}
+
+	.skills__box__text>h1 {
+		font-size: 44px;
+	}
+
+	.skills__box__text>h3 {
+		font-size: 30px;
+	}
+
+	.skills__box__text>h4 {
+		font-size: 44px;
+	}
+
+    .contact__bg{
+    	width: 100%;
+    }
+
+    .id{
+    float: none;
+    margin-left: 30px;
+
+    }
+
+	.id__detail__title{
+		width: 25%;
+	}
+
+	.id__detail__text{
+		width: 75%;
+	}
+
+
+	.id__detail__title>p{
+		font-size: 24px;
+	}
+
+	.id__detail__text>p{
+		font-size: 24px;
+	}
+
+	.contactme{
+		max-width: initial;
+		width: auto;
+		margin: 0 30px;
+		float: none;
+	}
+
+	.contactme__bg{
+		width: 100%;
+	}
+
+
+	.footer__box{
+		width: 100%;
+		margin: 0 0 30px 0  ;
+		text-align: center;
+		height: auto;
+	}
+
+	.footer__box>p{
+		display: block;
+	}
+
+	.sns{
+		position: static;
+	}
+
+}

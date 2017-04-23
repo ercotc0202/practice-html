@@ -1,6 +1,39 @@
+<link rel="stylesheet" type="text/css" href="main.css">
 
-/*ボックスの線を内側に*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+	height: 100%;
+}
+
+
+
+/*背景*/
+.wrap{
+	width: 100%;
+	height: 100%;
+	/*background-color: red;*/
+	background-image: url("illumination6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+/*ライン、ボックスの線を内側に*/
+border: 1px solid #303030;
 box-sizing:border-box;
+
+
+outline: 3px solid rgba(128,128,255,0.75);
+outline-offset: -3px;
+
+
+/*角丸を作る*/
+border-radius: 32px;
 
 
 /*アフター要素*/
@@ -13,3 +46,80 @@ box-sizing:border-box;
 
 /*ボタンポインター*/
 cursor: pointer;
+
+
+/*フォント設定*/
+line-height: 20px;
+letter-spacing: 20px;
+
+
+
+/*↓位置を上からに揃える*/
+vertical-align: top;
+
+
+/*中心に*/
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+margin: auto;
+
+
+/*奇数だけ*/
+:nth-child(even)
+
+
+/*真ん中の真ん中*/
+親 : display: table-cell;
+子 : display: table;	
+	margin: 0 auto;
+
+
+
+/*リンク色変更*/
+
+a:link{
+  color: #ff0000;
+  text-decoration: none;
+}
+a:visited{
+  color: #00ff00;
+  text-decoration: none;
+}
+a:hover{
+  color: #0000ff;
+  text-decoration: none;
+}
+a:active{
+  color: #800080;
+  text-decoration: none;
+}
+
+
+/*文字の折り返し*/
+word-break: break-all;
+
+/*smartphone-under1000px-----------------------*/
+
+@media screen and (max-width:650px) { 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
