@@ -30,11 +30,18 @@ html, body{
 }
 
 .header__logo{
-	width: 69px;
-	height: 79px;
+	width: 100px;
+	height: 100px;
 	margin: 20px auto;
 
 	background-image: url("g_010.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hrader__logo img{
+	width: 100%;
 }
 
 .header__title{
@@ -100,6 +107,10 @@ html, body{
 	width: 100%;
 }
 
+.contents__photo img{
+	width: 100%;
+}
+
 .contents__photo-plus li{
 	width: 50%;
 	display: inline-block;
@@ -132,8 +143,21 @@ html, body{
 
 
 /*detail-box*/
+
+.reblogfrom{
+	font-size: 12px;
+	display: block;
+}
+
+.reblogroot{
+	font-size: 12px;
+	display: block;
+}
+
 .detail__detail-box{
 	position: relative;
+	background-color: pink;
+	padding: 20px;
 }
 
 .contents__date{
@@ -168,49 +192,3 @@ html, body{
 	position: absolute;
 	right: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
