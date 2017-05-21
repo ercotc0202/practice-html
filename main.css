@@ -178,7 +178,6 @@ html, body{
 .contents__reblog{
 	width: 20px;
 	height: 20px;
-	background-color: blue;
 
 	position: absolute;
 	right: 40px;
@@ -187,7 +186,6 @@ html, body{
 .contents__like{
 	width: 20px;
 	height: 20px;
-	background-color: blue;
 
 	position: absolute;
 	right: 0px;
