@@ -101,6 +101,10 @@ a:active{
 /*文字の折り返し*/
 word-break: break-all;
 
+
+/*メニュースクロールする*/
+overflow-y: scroll;
+
 /*smartphone-under1000px-----------------------*/
 
 @media screen and (max-width:650px) { 
